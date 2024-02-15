@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Work+Sans:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Tangerine:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+
+}
+.container {
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    height: 680px;
+    max-width: 36rem;
+    background-color: #1B434D;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 20px 30px;
+    margin: 60px auto 360px;
+}
+
+.container img {
+    margin-left: 20px;
+}
+
+
+.particles-container {
+    position: relative;
+    left: 430px;
+    bottom: 12px;
+}
+
+.text-container {
+    width: 100%;
+    color: white;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.text-container h2 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.text-container p {
+    font-size: 24px;
+    margin-top: 10px ;
+}
+
+.save-button {
+    width: 202px;
+    height: 63px;
+    background-color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    position:relative;
+    left:370px;
+    top: 5px;
+    margin-right: 54px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.save-button a{
+    color: black;
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 24px;
+   top:12px;
+}
+
+.password-input-form{
+    position: relative;
+}
+.password-input {
+    width: 100%;
+    max-width: 576px;
+    height: 65px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    color: black;
+    font-size: 18px;
+    padding-left: 3.3rem;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.password-input-form img {
+   position: absolute;
+   z-index: 50;
+   top: 1.2rem;
+}
+/* Responsive Styles */
+@media screen and (max-width: 576px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+
+    }
+
+    .text-container h2 {
+        font-size: 30px;
+    }
+
+    .text-container p {
+        font-size: 20px;
+    }
+
+    .custom-container {
+        width: 90%;
+        right: 10px;
+
+    }
+    .input-field {
+        max-width: 100%;
+    }
+    .save-button{
+        left: 0;
+        width: 100%;
+    }
+}
+
+/* Mobile Responsive Styles */
+
+
+@media screen and (max-width: 768px) {
+
+    .container {
+        width: 100%;
+
+        margin: 40px auto 200px;
+    }
+
+    .particles-container {
+        left: 0;
+        bottom: 0;
+    }
+
+    .text-container {
+        width: 90%;
+        margin-bottom: 16px;
+
+    }
+
+    .text-container h2 {
+        font-size: 32px;
+    }
+
+    .text-container p {
+        font-size: 20px;
+    }
+    .save-button{
+        left: 0;
+        width: 100%;
+    }
+}

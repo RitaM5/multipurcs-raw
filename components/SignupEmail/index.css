@@ -1,0 +1,152 @@
+
+.parent-container {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.icon {
+    position: relative;
+    top: 41px;
+    margin-left: 12px;
+    z-index: 40;
+}
+
+.custom-input {
+    height: 57px;
+    border: 1px solid #ccc;
+    width: 93%;
+    padding-left: 35px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.password{
+    height: 57px;
+    border: 1px solid #ccc;
+    width: 555px;
+    max-width: 36rem;
+    padding-left: 8px;
+    border-radius: 10px;
+    margin-top: 1.5rem;
+    position: relative;
+}
+
+.password-container {
+    position: relative;
+}
+
+.pass-icon {
+    position: absolute;
+    top: 65%;
+    transform: translateY(-50%);
+    right: 20px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 576px) {
+    .parent-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .custom-input {
+        width: 233px;
+        max-width: none;
+        margin: 0 auto;
+        border-radius: 10px;
+        margin-top: 13px;
+        margin-right: 8px;
+    }
+
+    .password {
+        width: 259px;
+        max-width: none;
+        margin: 0 auto;
+        border-radius: 10px;
+        margin-left: 33px;
+        margin-top: 13px;
+    }
+
+    .icon {
+        left: 35px;
+        top: 3px;
+        z-index: 50;
+    }
+
+    .pass-icon {
+        position: absolute;
+        top: 60%;
+        right: 20px;
+        cursor: pointer;
+    }
+}
+
+@media screen and (min-width: 570px) and (max-width: 768px) {
+   .parent-container{
+    margin-left: 12px;
+   }
+   
+    .icon {
+        margin-right: 548px;
+        top: 40px;
+        z-index: 50;
+    }
+    .custom-form{
+        width: 100%;
+    }
+   .custom-input{
+    width: 550px;
+   }
+   .pass-icon{
+    right: 110px;
+   }
+   .password{
+    width: 580px;
+   }
+   
+}
+
+@media screen and (min-width: 769px) and (max-width: 1235px) {
+    .parent-container {
+        display: flex;
+        justify-content:center;
+        margin: 0 auto;
+    }
+
+    .custom-form {
+        width: 100%;
+     
+    }
+    .custom-input {
+        width: 550px;
+       position:relative;
+        margin: 0 auto;
+        display: flex;
+        
+    }
+    .password{
+        width: 580px;
+        margin: 0 auto;
+        display: flex;
+        margin-top: 16px;
+    }
+    .icon {
+        left: 7px;
+    }
+    .pass-icon{
+        top:46px
+    }
+    
+}
+@media screen and (min-width: 780px) and (max-width: 1113px) {
+    .parent-container {
+        justify-content:flex-start
+  
+    }
+}
