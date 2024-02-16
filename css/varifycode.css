@@ -14,12 +14,11 @@ body {
     height: 680px;
     max-width: 36rem;
     margin: 0 auto;
-    /* margin-top: 60px; */
     margin: 60px auto 360px;
     background-color: #1B434D;
     border-radius: 20px;
     padding: 20px 30px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .particles img {

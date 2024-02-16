@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multipurc | Login</title>
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+    <div class='container'>
+        <div class='login-content'>
+            <div class='order-last lg:order-first left-content'>
+                <h1 class=''>Log In to Multipurc</h1>
+                <p class=''>
+                    Send, spend and save smarter
+                </p>
+                <div class=' social-login'>
+                    <div class='google-apple'>
+                        <img src="https://img.icons8.com/color/25/google-logo.png" alt="google-logo"/>
+                        <p>Sign In with Google</p>
+                    </div>
+                    <div class='google-apple'>
+                        <img src="https://img.icons8.com/ios-glyphs/25/mac-os.png" alt="mac-os"/>
+                        <p>Sign In with Apple</p>
+                    </div>
+                </div>
+                <div class='or'>
+                    <hr class='border border-black'></hr>
+                    <span class='text-lg'>or with e-mail</span>
+                    <hr class='border border-black' />
+                </div>
+                <div style="padding: 20px 0px;">       
+                    <div class="form">
+                        <div class="email-container">
+                            <img src="https://img.icons8.com/ios/20/new-post--v1.png" alt="new-post--v1" />
+                            <input type="text" placeholder="Your Email" />
+                        </div>
+                        <div class="password-container">
+                            <input type="password" placeholder="Your Password" id="passwordInput"/>
+                            <img src="https://img.icons8.com/sf-regular/20/visible.png" alt="visible" onclick="togglePasswordVisibility()"/>
+                        </div>
+                        <div class="checkbox-container">
+                            <div class="form-control">
+                                <div class="checkbox">
+                                    <input type="checkbox" />
+                                  </div>
+                                <span>Remember me</span>
+                            </div>
+                            <div class="forgot-password">
+                                <a href="./forgotpass.html">Forgot Password?</a>
+                            </div>
+                        </div>
+                        <div class="">
+                            <input type="button" value="Sign In" class="submit-button" />
+                        </div>
+                        <p class="pt-8 text-lg signup-text">Don’t have an account? <span class="signup-link">SignIn</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class='right-content'>
+                <img src="image/Multipurc (700 x 700 px) 1.png" class='' style="margin-left: 15px;" alt="" srcset="" />
+                <div class='particles'>
+                    <img src="image/particles.png" class='' alt="" srcset="" />
+                </div>
+                <div class='active'>
+                    <img src="image/Active.png" class='mx-auto' alt="" srcset="" />
+                </div>
+                <div class='right-content-details'>
+                    <h2 class=''>Get Better With Money</h2>
+                    <p class=''>
+                        Overpay help you set saving goals, earn cash back offers. Go to disclaimer for more details and get paychecks up to two days early. Get a $20 bonus when you receive qualifying direct deposits
+                    </p>
+                    <div class="loader-item">
+                        <div class="loader"></div>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function togglePasswordVisibility() {
+            const passwordInput = document.getElementById('passwordInput');
+            const inputType = passwordInput.type;
+            passwordInput.type = inputType === 'password' ? 'text' : 'password';
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/7368c40b21.js" crossorigin="anonymous"></script>
+</body>
+</html>

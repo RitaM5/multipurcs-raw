@@ -4,90 +4,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Multipurc</title>
+    <title>Multipurc | Signup</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./components/SignupEmail/index.css">
 </head>
 
 <body>
-    <section>
-        <div class='signup-content'>
-            <div class='signup'>
-                <div class=' signup-left'>
-                    <img src="./image/Multipurc (700 x 700 px) 1.png" class='' alt="" srcset="" />
-                    <div class=' relative md:left-20 left-6 particles-img'>
-                        <img src="./image/particles.png" class='' alt="" srcset="" />
-                    </div>
-                    <div class='active'>
-                        <img src="./image/Active (1) 2.png" class='' alt="" srcset="" />
-                    </div>
-                    <div class='left-details'>
-                        <h2 class=' '>Easy to Build Your </h2>
-                        <p class=''>
-                            Overpay help you set saving goals, earn cash back offers. Go to disclaimer for more details
-                            and
-                            get
-                            paychecks up to two days early. Get a $20 bonus when you receive qualifying direct deposits
-                        </p>
-                        <!-- <BarLoader color="#fff" width={150} class='my-3 mx-auto transition duration-0' /> -->
-                    </div>
-                     <div class="loader-item">
-                        <div class="loader"></div>
-                     </div>
-
+    <div class='container'>
+        <div class='login-content'>
+            <div class='right-content'>
+                <img src="image/Multipurc (700 x 700 px) 1.png" class='' style="margin-left: 15px;" alt="" srcset="" />
+                <div class='particles'>
+                    <img src="image/particles.png" class='' alt="" srcset="" />
                 </div>
-                <div class='signup-right'>
-                    <div class="right-content">
-                        <h1 class=''>Log In to Multipurc</h1>
-                        <p class=''>
-                            Send, spend and save smarter
-                        </p>
-                        <div class='social-login'>
-                            <div class='google'>
-                                <img src="https://img.icons8.com/color/30/google-logo.png" alt="google-logo" />
-                                <p class=''>Sign In with Google</p>
+                <div class='active'>
+                    <img src="./image/Active (1) 2.png" class='mx-auto' alt="" srcset="" />
+                </div>
+                <div class='right-content-details'>
+                    <h2 class=''>Easy to Build Your</h2>
+                    <p class=''>
+                        Overpay help you set saving goals, earn cash back offers. Go to disclaimer for more details and
+                        get paychecks up to two days early. Get a $20 bonus when you receive qualifying direct deposits
+                    </p>
+                    <div class="loader-item">
+                        <div class="loader"></div>
+                    </div>
+                </div>
+            </div>
+            <div class='order-last lg:order-first left-content'>
+                <h1 class=''>Signup to Multipurc</h1>
+                <p class=''>
+                    Send, spend and save smarter
+                </p>
+                <div class=' social-login'>
+                    <div class='google-apple'>
+                        <img src="https://img.icons8.com/color/25/google-logo.png" alt="google-logo" />
+                        <p>Sign In with Google</p>
+                    </div>
+                    <div class='google-apple'>
+                        <img src="https://img.icons8.com/ios-glyphs/25/mac-os.png" alt="mac-os" />
+                        <p>Sign In with Apple</p>
+                    </div>
+                </div>
+                <div class='or'>
+                    <hr class='border border-black'>
+                    </hr>
+                    <span class='text-lg'>or with e-mail</span>
+                    <hr class='border border-black' />
+                </div>
+                <div style="padding: 20px 0px;">
+                    <div class="form">
+                        <div class="name-form">
+                            <div>
+                                <input type="text" placeholder="First Name" class="name-input" />
                             </div>
-                            <div class='apple'>
-                                <img src="https://img.icons8.com/ios-glyphs/30/mac-os.png" alt="mac-os" />
-                                <p class='text-lg font-semibold'>Sign In with Apple</p>
+                            <div>
+                                <input type="text" placeholder="Last Name" class="name-input" />
                             </div>
                         </div>
-                        <div class="same-width">
-                            <div class='order'>
-                                <hr style="width: 220" />
-                                <span style="width: 220">or with e-mail</span>
-                                <hr style="width: 220" />
-                            </div>
-                            <div class='form'>
-                                <div class='form-details'>
-                                    <div class="name-form">
-                                        <div>
-                                            <input type="text" placeholder="First Name" class="name-input" />
-                                        </div>
-                                        <div>
-                                            <input type="text" placeholder="Last Name" class="name-input" />
-                                        </div>
-                                    </div>
-                                    <div class="parent-container">
-                                        <script src="./components/SignupEmail/SignEmail.jsx.js"></script>
-                                    </div>
-                                    <div class='summery'>
-                                        <p>
-                                            By creating an account, you agreeing to our <span>Privacy Policy</span>, and
-                                            <span>Electronics Communication Policy</span>.
-                                        </p>
-                                    </div>
-                                    <div class='signin'>
-                                        <p><button>SignUp</button></p>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="email-container">
+                            <img src="https://img.icons8.com/ios/20/new-post--v1.png" alt="new-post--v1" />
+                            <input type="text" placeholder="Your Email" />
+                        </div>
+                        <div class="email-container">
+                            <img src="https://img.icons8.com/ios/20/new-post--v1.png" alt="new-post--v1" />
+                            <input type="text" placeholder="Username" />
+                        </div>
+                        <div class="password-container">
+                            <input type="password" placeholder="Your Password" id="passwordInput"/>
+                            <img src="https://img.icons8.com/sf-regular/20/visible.png" alt="visible" onclick="togglePasswordVisibility()"/>
+                        </div>
+                        <div class='summery'>
+                            <p>
+                                By creating an account, you agreeing to our <span>Privacy Policy</span>, and
+                                <span>Electronics Communication Policy</span>.
+                            </p>
+                        </div>
+                        <div class="">
+                            <a href="./login.html" target="_blank" rel="noopener noreferrer">
+                                <input type="button" value="Sign Up" class="submit-button" />
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+    <script>
+        function togglePasswordVisibility() {
+            const passwordInput = document.getElementById('passwordInput');
+            const inputType = passwordInput.type;
+            passwordInput.type = inputType === 'password' ? 'text' : 'password';
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/7368c40b21.js" crossorigin="anonymous"></script>
+    <script>
+        function togglePasswordVisibility() {
+            const passwordInput = document.getElementById('passwordInput');
+            const inputType = passwordInput.type;
+            passwordInput.type = inputType === 'password' ? 'text' : 'password';
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/7368c40b21.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

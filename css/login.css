@@ -27,7 +27,202 @@ body {
     gap: 2rem;
 
 }
-/* for left part */
+
+.left-content {
+    max-width: 100%;
+    padding: 10px;
+
+}
+
+.left-content h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.left-content p {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* */
+.social-login {
+    display: flex;
+    justify-content: center;
+    gap: 64px;
+    margin-top: 12px;
+    margin: 0 auto;
+    padding: 16px 0;
+    width: 100%;
+    max-width: 36rem;
+}
+
+.google-apple {
+    width: 100%;
+    max-width: 256px;
+    margin: 0 auto;
+    height: 52px;
+    padding: 0px 8px;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    border: 2px solid rgb(156 163 175);
+    border-radius: 10px;
+}
+
+.google-apple p {
+    font-size: 16px;
+    font-weight: 600;
+    width: 80%;
+}
+
+.or {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:5px;
+    align-items: center;
+    width: 100%;
+    max-width: 36rem;
+    margin: 0 auto;
+
+}
+
+.or hr {
+    width: 100%;
+    border: 1px solid black;
+}
+
+.or span {
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+}
+
+.form {
+    max-width: 36rem;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.form .email-container,
+.form .password-container {
+    position: relative;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.form .email-container img,
+.form .password-container img {
+    position: absolute;
+    top: 55%;
+    transform: translateY(-50%);
+}
+
+.form .email-container img {
+    left: 1rem;
+}
+
+.form .email-container input,
+.form .password-container input {
+    width: 100%;
+    height: 65px;
+    padding-left: 3rem;
+    border: 2px solid rgb(156, 163, 175);
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-top: 8px;
+}
+
+.form .password-container img {
+    right: 1rem;
+}
+
+.form .checkbox-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+
+.form-control {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.checkbox input {
+    position: relative;
+}
+
+.checkbox input::before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    background-color: #091921;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+
+/* .checkbox input:checked::before {
+    background-color: darkcyan;
+    border: 1px solid darkcyan;
+  } */
+.checkbox input:checked::after {
+    position: absolute;
+    content: "\f00c";
+    margin-right: 2px;
+    font-family: "FontAwesome";
+    color: #fff;
+}
+
+.form .checkbox-container span {
+    font-size: 16px;
+    color: #000;
+}
+
+.form .forgot-password {
+    text-align: left;
+    margin-top: 0.5rem;
+
+}
+
+.form .forgot-password a {
+    text-decoration: none;
+    color: blue;
+    font-size: 16px;
+}
+
+.form .submit-button {
+    background-color: #1B434D;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    height: 65px;
+    border-radius: 10px;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 35px;
+    border: none;
+}
+
+.form .signup-text {
+    font-size: 18px;
+    padding-top: 1.8rem;
+}
+
+.form .signup-link {
+    font-weight: bold;
+    color: #1B434D;
+}
+
+/* right part */
 .right-content {
     background-color: #1B434D;
     height: 100%;
@@ -42,7 +237,7 @@ body {
 
 .active {
     position: relative;
-    bottom: 5.9rem;
+    bottom: 4rem;
     text-align: center;
 }
 
@@ -96,174 +291,6 @@ body {
     }
 }
 
-/* for right part */
-.left-content {
-    max-width: 100%;
-    padding: 10px;
-}
-
-.left-content h1 {
-    text-align: center;
-    font-size: 40px;
-    font-weight: bold;
-}
-
-.left-content p {
-    text-align: center;
-    font-size: 24px;
-    font-weight: bold;
-}
-
-/* */
-.social-login {
-    display: flex;
-    justify-content: center;
-    gap: 64px;
-    margin-top: 12px;
-    margin: 0 auto;
-    padding: 16px 0;
-    width: 100%;
-    max-width: 36rem;
-}
-
-.google-apple {
-    width: 100%;
-    max-width: 256px;
-    margin: 0 auto;
-    height: 52px;
-    padding: 0px 8px;
-    display: flex;
-    align-items: center;
-    gap: 2px;
-    border: 2px solid rgb(156 163 175);
-    border-radius: 10px;
-}
-
-.google-apple p {
-    font-size: 18px;
-    font-weight: 600;
-}
-
-.or {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: center;
-    width: 100%;
-    max-width: 36rem;
-    margin: 0 auto;
-
-}
-
-.or hr {
-    width: 100%;
-    border: 1px solid black;
-}
-
-.or span {
-    font-size: 18px;
-    width: 100%;
-    text-align: center;
-}
-
-.form {
-    max-width: 36rem;
-    width: 100%;
-    margin: 0 auto;
-
-}
-.name-form {
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    gap: 2.9rem;
-}
-
-.name-input {
-    width: 250px;
-    height: 57px;
-    font-size: 15px;
-    padding-left: 12px;
-    border: 1px solid #a5a5a5;
-    border-radius: 10px;
-}
-
-.form .email-container,
-.form .password-container {
-    position: relative;
-    width: 100%;
-   margin-top: 1rem;
-}
-
-.form .email-container img,
-.form .password-container img {
-    position: absolute;
-    top: 55%;
-    transform: translateY(-50%);
-}
-
-.form .email-container img {
-    left: 1rem;
-}
-
-.form .email-container input,
-.form .password-container input {
-    width: 100%;
-    height: 65px;
-    padding-left: 3rem;
-    border: 2px solid rgb(156, 163, 175);
-    border-radius: 10px;
-    box-sizing: border-box;
-    margin-top: 8px;
-}
-
-.form .password-container img {
-    right: 1rem;
-}
-.summery {
-    margin-top: 20px;
-    position: relative;
-    text-align: left;
-}
-
-.summery p {
-    color: #a5a5a5;
-    font-size: 14px;
-    width: 560px;
-    margin: 0 auto;
-    text-align: left;
-    font-weight: 700;
-}
-
-.summery span {
-    color: black;
-
-}
-.form .submit-button {
-    background-color: #1B434D;
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    height: 65px;
-    border-radius: 10px;
-    width: 100%;
-    cursor: pointer;
-    margin-top: 35px;
-    border: none;
-}
-
-.form .signup-text {
-    font-size: 18px;
-    padding-top: 1.8rem;
-}
-
-.form .signup-link {
-    font-weight: bold;
-    color: #1B434D;
-}
-
-
-
 @media screen and (max-width:576px) {
     .container {
         width: 100%;
@@ -292,15 +319,19 @@ body {
 
     .social-login {
         width: 100%;
-       
+        display: grid;
+        gap: 12px;
     }
 
     .google-apple {
-        width: 100%;
+        max-width: 100%;
     }
 
     .or {
+        grid-template-columns: repeat(1, 1fr);
+        
         width: 100%;
+
     }
 
     .particles img {
@@ -339,7 +370,7 @@ body {
 
     .social-login {
         width: 100%;
-       
+        
     }
 
     .google-apple {
